@@ -39,4 +39,27 @@ echo "<pre>";
 print_r($numerosDobrados);
 echo "</pre>";
 
+// Exemplo 4
+
+$soma = function($a, $b){
+    return $a + $b;
+};
+
+echo $soma(44, 22);
+
+echo "<br>";
+
+// Exercício 1
+/* FAÇA UM ALGORITIMO PARA CALCULAR MÉDIA DE NOTAS DE ALUNOS CADASTRADOS EM UM ARRAY.
+USE CLOSURE PARA CALCULAR AS MEDIAS */
+$notas = [10, 9, 7.50];
+echo "<pre>";
+print_r($notas);
+echo "</pre>";
+
+$mediaNotas = function($array){
+    return array_sum($array) / count($array);
+};
+
+echo $mediaNotas($notas);
 ?>
